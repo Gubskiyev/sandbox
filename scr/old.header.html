@@ -1,0 +1,22 @@
+<?php
+        mysql_query("UPDATE geo.uin SET on_line = ".time()." WHERE uin = ".$row['uin']);
+?>
+
+<!-- Header Start -->
+<DIV class=title></DIV>
+<DIV class=visual><SPAN class=damn>War</SPAN>of<BR><SPAN class=space2></SPAN>War </DIV>
+<DIV class=name><SPAN class=damn>War</SPAN>of<BR><SPAN class=space2></SPAN>War </DIV>
+<DIV class=time><a href="chat_frm.php" target="_top"><b>Чат</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Сейчас <?php print date("H:i");?> DST<BR> <a href="/on_line.php">Игроков онлайн: <?php echo mysql_result(mysql_query("SELECT count(*) FROM geo.uin where on_line >".(time()-300)),0);?></a>
+<br><span class="mail">*</span> <a href="/mail.php">Новых писем: <strong><?php 
+$res = mysql_query("select count(*) from geo.mail where t = $row[uin] and r = 0");
+$m = mysql_result($res,0);
+if ($m>0) echo "<font color=\"ff0000\">$m</font>"; else echo $m;
+?></a></strong></DIV>
+
+<!-- Header End -->
+
+<!-- Main Menu Start -->
+<DIV class=menu>
+<A href="/pers.php" title='HP [<?php echo $row['hp'];?>|<?php echo ($row['param_2']*6)."]\n".number_format($row['money_1'], 0, '.', '`')." $";?>' <?php if ($f==1)echo'id=current ';?>>Персонаж</A><?php if (@mysql_result(mysql_query("select count(*) from bot.bot where uin = $row[uin]"),0)>0){ ?><A href="/bot/bot.php" <?php if ($f==12)echo'id=current ';?>>Бот</A><?php } ?><A href="/mail.php" <?php if ($f==2)echo'id=current ';?>>Почта</A><A href="/map.php" <?php if ($f==3)echo'id=current ';?>>Карта</A><A href="/forum.php" <?php if ($f==4)echo'id=current ';?>>Форум</A><A href="/btl.php" <?php if ($f==6)echo'id=current '; if ($row['btl']>100)echo 'id=btl';?> >Бои</A><A href="/rules.php" <?php if ($f==5)echo'id=current ';?>>Правила</A><a href="/casino/index.php" <?php if ($f==10)echo'id=current ';?>>Казино</a></DIV><!-- Main Menu End -->
+<DIV class=line></DIV>
+

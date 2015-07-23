@@ -1,0 +1,601 @@
+body {
+	background: #FFFFF9;
+	margin: 0px;
+}
+body, td, th, select, input {
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+.title {
+	background: #FFFFF0;
+	height: 88px;
+}
+.footer {
+	background: #FFFFF0;
+	height: 150px;
+	font-size: 11px;
+	padding-left: 30px;
+	padding-top: 8px;
+}
+.line {
+	background: #F3CD18;
+	height: 5px;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-collapse:separate;
+	font-size: 1px;
+	clear: both;
+}
+.line1 {
+	background: #9A8978;
+	height: 3px;
+	border-bottom: 1px solid #5F4D3A;
+	border-collapse:separate;
+	font-size: 1px;
+	border-right: 1px solid #5F4D3A;
+	border-left: 1px solid #5F4D3A;
+}
+.visual {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 88px;
+	width: 330px;
+	background:  url(/img/ind.gif) no-repeat;
+	text-align: right;
+	font-size: 25px;
+	color: #F3CD18;
+	font-family: "Courier New", Courier, mono;
+	font-weight: bold;
+	line-height: 8px;
+	letter-spacing: 2px;
+}
+.name {
+	position: absolute;
+	left: 0px;
+	top: -2px;
+	height: 88px;
+	width: 330px;
+	text-align: right;
+	font-size: 25px;
+	color: #000000;
+	font-family: "Courier New", Courier, mono;
+	font-weight: bold;
+	line-height: 8px;
+	letter-spacing: 2px;
+}
+.damn {
+	font-size: 28px;
+	line-height: 55px;
+}
+.space2 {
+	letter-spacing: -3px;
+}
+.space1 {
+	letter-spacing: -1px;
+}
+.menu {
+	text-align: right;
+	border-right: 1px solid #000000;
+	position: absolute;
+	height: 22px;
+	width: 780px;
+	top: 67px;
+}
+.menu a, .menu_small a {
+	font-size: 13px;
+	color: #000000;
+	text-decoration: none;
+	background: #F3CD18;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-collapse:separate;
+	line-height: 22px;
+	padding: 2px 7px;
+
+}
+.menu a:hover, .menu_small a:hover {
+	text-decoration: none;
+	background: #F9F5F2;
+}
+a#current {
+	background: #E3BD00;
+	border-bottom: 1px solid #9A8978;
+	color: #FFFFFF;
+}
+a#now {
+	background: #EEEEED;
+}
+
+.content {
+	width: 780px;
+	margin-left: 25px;
+	margin-bottom: 50px;
+}
+.time {
+	position: absolute;
+	width: 780px;
+	text-align: right;
+	left: 0px;
+	top: 12px;
+	font-size: 11px;
+}
+
+.menu_left {
+	width: 180px;
+	margin-bottom: 80px;
+	line-height: 8px;
+	float: left;
+	margin-right: 50px;
+	margin-top: 10px;
+	clear: none;
+}
+
+.menu_left p, .right_block p {
+	background: #F3CD18;
+	margin-top: 10px;
+	margin-bottom: 3px;
+	width: 100%;
+	border: 1px solid #000000;
+	padding: 3px 2px 3px 8px;
+	font-weight: bold;
+}
+
+.menu_left a, .right_block a {
+	color: #000000;
+	text-decoration: none;
+	display: block;
+	padding-left: 10px;
+	border-bottom: 1px solid #EEEEEE;
+	width: 100%;
+	padding-right: 0px;
+	line-height: 14px;
+}
+.menu_left a:hover, .right_block a:hover {
+	background: #FFFFFF;
+}
+p#marker {
+	height: 3px;
+	background: #DACEB8;
+	line-height: 1px;
+	border: 1px solid #9A8978;
+	width: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 3px;
+}
+.central_block {
+	float: left;
+	margin-top: 18px;
+	width: 330px;
+	margin-bottom: 80px;
+	margin-right: 50px;
+}
+.main_block {
+	float: left;
+	margin-top: 18px;
+	width: 540px;
+	margin-bottom: 80px;
+}
+table {
+	width: 100%;
+	border: 1px solid #000000;
+	margin-bottom: 15px;
+	border-collapse:collapse;
+	background: #FFFFF9;
+}
+table td, table th {
+	padding-right: 8px;
+	padding-left: 8px;
+}
+th {
+	color: #000000;
+	background: #F3CD18;
+	border-bottom: 1px solid #9A8978;
+	text-align: left;
+	font-weight: bold;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-top: 1px solid #000000;
+}
+.white td {
+	background: #F5F5F5;
+}
+td a, th a {
+	color: #000000;
+	text-decoration: none;
+	font-weight: normal;
+}
+.arrow {
+	font-size: 15px;
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-weight: bold;
+	letter-spacing: -3px;
+	line-height: 12px;
+}
+.user {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	clear: both;
+	background: #eeedD8;
+	padding: 4px 4px 12px;
+        border: 1px solid #111111;
+}
+.page_name {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	background: #eeedD8;
+	padding: 4px 4px 4px 8px;
+	border: 1px solid #111111;
+}
+.page_user {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	background: #eeedD8;
+	padding: 3px 0px 2px 8px;
+        border: 1px solid #111111;
+	width: 745px;
+	margin-top: 15px;
+	margin-left: 25px;
+}
+.count {
+	font-size: 13px;
+	font-weight: normal;
+	float: right;
+	text-align: right;
+	color: #000000;
+}
+p {
+	margin-top: 0px;
+}
+.right_block {
+	float: left;
+	width: 145px;
+	line-height: 8px;
+	margin-top: 10px;
+	margin-bottom: 80px;
+}
+.weapon {
+	background: #F4EFE9;
+	margin-bottom: 0px;
+}
+.weapon th {
+	font-size: 15px;
+}
+.thumb {
+	width: 100px;
+	height: 100px;
+	border-right: 1px solid #9A8978;
+	padding: 0px;
+}
+.grid {
+	padding-right: 20px;
+	border-right: 1px solid #9A8978;
+	font-weight: bold;
+}
+.price {
+	font-size: 12px;
+	color: #FFFFFF;
+}
+.buy {
+	font-size: 12px;
+	border-top: 1px solid #FFFFFF;
+	border-right: 1px solid #9A8978;
+	border-bottom: 1px solid #9A8978;
+	border-left: 1px solid #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 3px;
+	margin-bottom: 2px;
+	margin-right: 2px;
+	padding: 3px 7px 3px 8px;
+	background: #DACEB8;
+	color: #594D40;
+	display: block;
+	clear: none;
+}
+.about {
+	font-size: 11px;
+	background: #FFFFFF;
+	text-align: justify;
+	padding: 8px;
+	border-right: 1px solid #9A8978;
+	border-bottom: 1px solid #9A8978;
+	border-left: 1px solid #9A8978;
+	margin-bottom: 15px;
+}
+.info {
+	font-size: 14px;
+	font-weight: normal;
+	float: right;
+	margin-right: 8px;
+	margin-top: 2px;
+}
+.left_block {
+	width: 435px;
+	float: left;
+	margin-top: 0px;
+	margin-right: 40px;
+	margin-bottom: 80px;
+}
+.tab_block {
+	clear: right;
+	float: left;
+	width: 280px;
+}
+.white1 td {
+	background: #FFFFFF;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.mail {
+	font-family: Wingdings;
+	font-size: 16px;
+	line-height: 14px;
+	vertical-align: -15%;
+}
+.item_block {
+	margin-top: 18px;
+	width: 600px;
+	margin-bottom: 80px;
+	margin-left: 90px;
+}
+.map {
+	background: #DACEB8 url(/img/map.jpg) no-repeat;
+	width: 357px;
+	border: none;
+	border-collapse:separate;
+	height: 357px;
+	margin-bottom: 5px;
+}
+.map td {
+	padding: 0px;
+}
+.map_block {
+	width: 365px;
+	float: left;
+	margin: 18px 40px 80px 10px;
+}
+.map_border {
+	padding: 3px;
+	border: 1px solid #9A8978;
+	background: #FFFFFF;
+	border-collapse:separate;
+	text-align: center;
+}
+.map_right {
+	clear: right;
+	float: left;
+	width: 330px;
+	margin-top: 18px;
+}
+.menu_small {
+	border-right: 1px solid #5F4D3A;
+}
+.friend {
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 150px;
+}
+
+.enemy {
+	width: 150px;
+	padding: 0px;
+}
+.ally {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	background: #FFFFFF;
+	border: 1px solid #000000;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	width: 150px;
+}
+.turn {
+	margin-top: 10px;
+	text-align: center;
+	clear: none;
+}
+.turn_time {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	background: #eeedD8;
+	border: 1px solid #000000;
+	color: #000000;
+	padding: 2px 15px;
+	text-align: left;
+	width: 500px;
+}
+.war {
+	width: 330px;
+}
+.war td {
+	text-align: left;
+	width: 33%;
+}
+.fire {
+	font-size: 12px;
+	border: 1px solid #000000;
+	font-weight: bold;
+	text-align: center;
+	background: #F3CD18;
+	color: #000000;
+	width: 100%;
+}
+.chat {
+	background: #FFFFFF;
+	border: 1px solid #9A8978;
+	margin-bottom: 20px;
+	text-align: left;
+	font-size: 12px;
+	padding: 0px 5px 5px;
+	color: #000000;
+	margin-top: 3px;
+}
+.comment {
+	color: #8B7967;
+}
+.chat a {
+	font-weight: bold;
+	color: #594D40;
+	text-decoration: none;
+}
+.chat div {
+	height: 5px;
+	width: 500px;
+}
+.enemy table {
+	margin-bottom: 8px;
+	border-top: 1px solid #F4EFE9;
+	border-right: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+}
+.enemy th {
+	font-weight: normal;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	border-bottom: none;
+}
+.boi {
+	margin-top: 15px;
+	border: none;
+} 
+
+A#btl {
+    BACKGROUND: #FFC7B2; 
+	COLOR: #000000; 
+	BORDER-BOTTOM: #000000 1px solid
+}
+a {
+	color: #5F4D3A; text-decoration: none;
+}
+.num {
+	float: right;
+	clear: none;
+}
+.forum {
+	float: left;
+	margin-top: 20px;
+	width: 100%;
+	margin-bottom: 20px;
+	clear: none;
+	padding-bottom: 80px;
+}
+.wrap {
+	white-space: nowrap;
+}
+.post td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.post th {
+	font-weight: normal;
+	border-bottom: none;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.msg {
+	width: 450px;
+}
+.msg td{
+	padding: 0px;
+}
+.msg textarea {
+	width: 100%;
+	height: 150px;
+	background: #FFFFFF;
+	border-bottom: 1px solid #9A8978;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	padding: 10px;
+}
+
+.del {
+	font-size: 12px;
+	border-top: 1px solid #FFFFFF;
+	border-right: 1px solid #9A8978;
+	border-bottom: 1px solid #9A8978;
+	border-left: 1px solid #FFFFFF;
+	font-weight: bold;
+	background: #DACEB8;
+	color: #594D40;
+	width: 190px;
+	float: left;
+	margin-top: 10px;
+}
+.letter {
+	background: #FFFFFF;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.go a {
+	background-color: #DACEB8;
+	display: inline-table;
+	font-size: 26px;
+}
+.go a:hover {
+	background-color: #9A8978;
+}
+.req {  
+	border: none;
+}
+.req_table td {  
+	border: 1px solid #9A8978;
+}
+.content_btl{
+        margin-top: 20px;
+}
+.side1{
+        color: #ff0000; 
+        text-decoration: none;
+}
+.side2{
+        color: #0000ff;
+        text-decoration: none;
+}
+.shop_bg{
+	background: url(/img/items/bg_small_day.gif) no-repeat;
+}
+.item_bg{
+	background: url(/img/items/bg_day.gif) no-repeat;
+}
+.go a {
+	background-color: #DACEB8;
+	display: inline-table;
+	font-size: 26px;
+}
+.go a:hover {
+	background-color: #9A8978;
+}
+.red td {
+	background: #FFC7B2;
+}
+.login {
+        width: 230px;
+}
+.reg {
+        width: 600px;
+}
+.reg td {
+        border: 1px solid #000000;
+}
+.px200 {
+        width: 200px;
+}
+.tb_border {
+        width: 200px;
+}
+.tb_border td {
+        border: 1px solid #000000;
+}
+
